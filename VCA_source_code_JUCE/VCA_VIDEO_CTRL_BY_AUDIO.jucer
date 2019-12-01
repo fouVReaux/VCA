@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="WLi8PG" name="VCA_VIDEO_CTRL_BY_AUDIO" projectType="guiapp"
+              jucerVersion="5.3.2">
+  <MAINGROUP id="hl6awo" name="VCA_VIDEO_CTRL_BY_AUDIO">
+    <GROUP id="{401FDC56-4BE1-5491-B5A4-686B9B85A2B1}" name="Source">
+      <GROUP id="{B92F9466-BDAC-48BB-F88A-E2E66FE8BDBF}" name="GUI">
+        <FILE id="Oaj9cB" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+        <FILE id="XWBHKo" name="Controller.cpp" compile="1" resource="0" file="Source/Controller.cpp"/>
+        <FILE id="OempOI" name="Controller.h" compile="1" resource="0" file="Source/Controller.h"/>
+        <FILE id="SQaRWR" name="ViewWindow.h" compile="1" resource="0" file="Source/ViewWindow.h"/>
+      </GROUP>
+      <GROUP id="{9345BAAF-B2DE-1829-72E5-9B412CB247A7}" name="Effects">
+        <FILE id="g4i6TZ" name="MainComponent.cpp" compile="1" resource="0"
+              file="Source/MainComponent.cpp"/>
+        <FILE id="N8lTgh" name="MainComponent.h" compile="1" resource="0" file="Source/MainComponent.h"/>
+        <FILE id="knJp6m" name="RingBuffer.h" compile="1" resource="0" file="Source/RingBuffer.h"/>
+        <GROUP id="{5DF61422-4972-E3AA-7542-1F6CE330DAF3}" name="Oscilloscope">
+          <FILE id="njwDWt" name="Oscilloscope2D.h" compile="1" resource="0"
+                file="Source/Oscilloscope2D.h"/>
+        </GROUP>
+        <GROUP id="{DE47A0F4-9B49-4A60-3128-63526FDE5F0A}" name="ObjRotation">
+          <FILE id="B3Jkej" name="ObjRotation.cpp" compile="1" resource="0" file="Source/ObjRotation.cpp"/>
+          <FILE id="lTUkS9" name="TextureTextButton.cpp" compile="1" resource="0"
+                file="Source/TextureTextButton.cpp"/>
+          <FILE id="R4VKiv" name="DemoUtilities.h" compile="1" resource="0" file="Source/DemoUtilities.h"/>
+          <FILE id="kI7J8H" name="WavefrontObjParser.h" compile="1" resource="0"
+                file="Source/WavefrontObjParser.h"/>
+        </GROUP>
+      </GROUP>
+    </GROUP>
+    <GROUP id="{EA11D0B2-A2D4-D4FC-CDFD-BF30C3F39B57}" name="Resources">
+      <GROUP id="{4DA1F05E-9964-F308-5F38-CD3ED6682078}" name="Texture">
+        <FILE id="Nj1eJd" name="A.jpg" compile="0" resource="1" file="Resources/texture/A.jpg"/>
+        <FILE id="Mg3vns" name="B.jpg" compile="0" resource="1" file="Resources/texture/B.jpg"/>
+        <FILE id="uNWZLS" name="C.jpg" compile="0" resource="1" file="Resources/texture/C.jpg"/>
+        <FILE id="tUUL39" name="D.jpg" compile="0" resource="1" file="Resources/texture/D.jpg"/>
+        <FILE id="dZvea6" name="E.jpg" compile="0" resource="1" file="Resources/texture/E.jpg"/>
+        <FILE id="hqOSnK" name="F.jpg" compile="0" resource="1" file="Resources/texture/F.jpg"/>
+        <FILE id="VuwxWD" name="G.jpg" compile="0" resource="1" file="Resources/texture/G.jpg"/>
+        <FILE id="eWmlbt" name="H.jpg" compile="0" resource="1" file="Resources/texture/H.jpg"/>
+      </GROUP>
+      <GROUP id="{6DEFEACC-E030-F75D-9F64-73B4BFA24E0E}" name="Obj">
+        <FILE id="Udhshc" name="Cat.obj" compile="0" resource="1" file="Resources/obj/Cat.obj"/>
+        <FILE id="FKiMc8" name="Cow.obj" compile="0" resource="1" file="Resources/obj/Cow.obj"/>
+        <FILE id="wRgw53" name="Deer.obj" compile="0" resource="1" file="Resources/obj/Deer.obj"/>
+        <FILE id="ZHnn3K" name="Face.obj" compile="0" resource="1" file="Resources/obj/Face.obj"/>
+        <FILE id="pnGYiG" name="Goat.obj" compile="0" resource="1" file="Resources/obj/Goat.obj"/>
+        <FILE id="PJbH7m" name="Human.obj" compile="0" resource="1" file="Resources/obj/Human.obj"/>
+        <FILE id="aNHPRE" name="Rat.obj" compile="0" resource="1" file="Resources/obj/Rat.obj"/>
+        <FILE id="Q15nJh" name="Tiger.obj" compile="0" resource="1" file="Resources/obj/Tiger.obj"/>
+        <FILE id="yYl7rZ" name="Wolf.obj" compile="0" resource="1" file="Resources/obj/Wolf.obj"/>
+      </GROUP>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug"/>
+        <CONFIGURATION isDebug="0" name="Release"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../../modules"/>
+        <MODULEPATH id="juce_events" path="../../modules"/>
+        <MODULEPATH id="juce_graphics" path="../../modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../modules"/>
+        <MODULEPATH id="juce_video" path="../../modules"/>
+        <MODULEPATH id="juce_opengl" path="../../modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../../modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../modules"/>
+        <MODULEPATH id="juce_analytics" path="../../modules"/>
+        <MODULEPATH id="juce_product_unlocking" path="../../modules"/>
+        <MODULEPATH id="juce_osc" path="../../modules"/>
+        <MODULEPATH id="juce_dsp" path="../../modules"/>
+        <MODULEPATH id="juce_box2d" path="../../modules"/>
+        <MODULEPATH id="juce_blocks_basics" path="../../modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_analytics" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_blocks_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_box2d" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+    <MODULE id="juce_osc" showAllCode="1" useLocalCopy="1" useGlobalPath="0"/>
+    <MODULE id="juce_product_unlocking" showAllCode="1" useLocalCopy="1"
+            useGlobalPath="0"/>
+    <MODULE id="juce_video" showAllCode="1" useLocalCopy="1" useGlobalPath="1"/>
+  </MODULES>
+  <LIVE_SETTINGS>
+    <LINUX/>
+  </LIVE_SETTINGS>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+</JUCERPROJECT>
